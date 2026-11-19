@@ -30,7 +30,7 @@ void subirNivel(Jogador *j) {
     }
 }
 
-/* quanto maior o nivel, mais rapido atira  */
+/* quanto maior o nivel, mais rapido atira (em segundos) */
 float intervaloTiro(int nivel) {
     float t = 0.75f - nivel * 0.05f;
     if (t < 0.2f) t = 0.2f;
